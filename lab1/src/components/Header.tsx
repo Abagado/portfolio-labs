@@ -1,7 +1,7 @@
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
 
-function Header() {
+export const Header=()=> {
   const menu = [
     { id: 1, name: "HOME", path: "/" },
     { id: 2, name: "ABOUT", path: "/about" },
@@ -41,7 +41,5 @@ function Header() {
       </div>
     </div>
   );
-}
-
-export default Header;
+};
 

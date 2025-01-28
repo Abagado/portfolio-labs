@@ -1,6 +1,6 @@
 import React from "react";
 
-function Introduction() {
+export const Introduction=()=> {
   return (
     <div className="flex justify-center flex-col items-center relative z-10">
       <div className="h-[100px] border-r-[1px] mt-[-20px]" />
@@ -26,6 +26,4 @@ function Introduction() {
       />
     </div>
   );
-}
-
-export default Introduction;
+};

@@ -1,6 +1,6 @@
 import React from 'react'
 
-function ProfilePic() {
+export const ProfilePic=()=> {
   return (
     <div className='fixed'>
         <img src='/src/assets/user_image.png'

@@ -1,7 +1,7 @@
 import React from 'react';
 import { IoLogoDiscord, IoLogoVk, IoLogoGithub, IoLogoWhatsapp, IoPaperPlane } from "react-icons/io5";
 
-function Footer() {
+export const Footer = ()=> {
   return (
     <footer className="w-full border-t-[1px] 
       flex flex-col items-center bg-green-200 py-5">
@@ -17,6 +17,4 @@ function Footer() {
       </p>
     </footer>
   );
-}
-
-export default Footer;
+};

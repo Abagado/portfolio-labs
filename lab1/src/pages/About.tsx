@@ -1,7 +1,7 @@
 import React from "react";
 import { FaSmile, FaHeart, FaRocket } from "react-icons/fa";
 
-const About = () => {
+export const About = () => {
   return (
     <div className="relative flex flex-col items-center w-full min-h-screen bg-gradient-to-b from-white to-green-100 px-5 py-12">
       {/* Заголовок */}
@@ -70,4 +70,3 @@ const About = () => {
   );
 };
 
-export default About;

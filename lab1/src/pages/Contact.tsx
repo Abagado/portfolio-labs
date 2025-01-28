@@ -1,7 +1,7 @@
 import React from "react";
 import { FaEnvelope, FaPhoneAlt, FaMapMarkerAlt } from "react-icons/fa";
 
-const Contact = () => {
+export const Contact = () => {
   return (
     <div className="flex flex-col items-center w-full min-h-screen bg-gradient-to-b from-green-100 to-white px-5 py-12">
       {/* Заголовок */}
@@ -46,5 +46,5 @@ const Contact = () => {
   );
 };
 
-export default Contact;
+
 

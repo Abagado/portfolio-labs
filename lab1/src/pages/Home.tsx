@@ -1,8 +1,8 @@
-import Introduction from '../components/Introduction';
-import ProfilePic from '../components/ProfilePic';
+import {Introduction} from '../components/Introduction';
+import {ProfilePic} from '../components/ProfilePic';
 
 
-const Home = () => {
+export const Home = () => {
   return (
     <div className="ml-[90px] min-h-screen grid grid-cols-1 md:grid-cols-3">
       <div className="col-span-2 p-5">
@@ -14,5 +14,3 @@ const Home = () => {
     </div>
   );
 };
-
-export default Home;

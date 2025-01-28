@@ -18,7 +18,7 @@ const skills = [
   { name: 'PostgreSQL', icon: <SiPostgresql className="text-blue-700" /> },
 ];
 
-const Skills = () => {
+export const Skills = () => {
   return (
     <div className="flex flex-col items-center justify-start w-fullmin-h-screen bg-gradient-to-b from-white to-green-100 px-5 py-12">
       <h1 className="text-4xl font-bold mb-8 text-green-600">Навыки</h1>
@@ -37,7 +37,7 @@ const Skills = () => {
   );
 };
 
-export default Skills;
+
 
 
 

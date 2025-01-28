@@ -25,7 +25,7 @@ const projects = [
   },
 ];
 
-const Projects = () => {
+export const Projects = () => {
   return (
     <div className="flex flex-col items-center w-full min-h-screen bg-gradient-to-b from-white to-green-100 px-5 py-12">
       {/* Заголовок */}
@@ -58,5 +58,4 @@ const Projects = () => {
   );
 };
 
-export default Projects;
 
