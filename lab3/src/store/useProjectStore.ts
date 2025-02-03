@@ -1,10 +1,10 @@
 import { create } from "zustand";
 
 interface Project {
-  id: number;
+  id: string;
   name: string;
   description: string;
-  icon: string; // Ссылка на иконку
+  icon: string; 
 }
 
 interface ProjectStore {
@@ -17,14 +17,17 @@ export const useProjectStore = create<ProjectStore>((set) => ({
   projects: [],
   addProject: (project) => {
     set((state) => {
-      const updatedProjects = [
-        ...state.projects,
-        { id: state.projects.length + 1, ...project },
-      ];
-      localStorage.setItem("projects", JSON.stringify(updatedProjects)); // Сохраняем в localStorage
+      const newProject = {
+        id: crypto.randomUUID(),
+        ...project
+      };
+      const updatedProjects = [...state.projects, newProject];
+
+      localStorage.setItem("projects", JSON.stringify(updatedProjects));
       return { projects: updatedProjects };
     });
   },
-  loadProjects: (projects) => set({ projects }),
+  loadProjects: (projects) => {
+    set({ projects });
+  },
 }));
-
