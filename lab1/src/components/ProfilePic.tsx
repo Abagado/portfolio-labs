@@ -1,12 +1,12 @@
-import React from 'react'
+import React from "react";
+import userImage from "../assets/user_image.png"; // Импорт изображения как модуля
 
-export const ProfilePic=()=> {
+export const ProfilePic = () => {
   return (
-    <div className='fixed'>
-        <img src='/src/assets/user_image.png'
-        className='h-screen object-cover'/>
+    <div className="fixed">
+      <img src={userImage} className="h-screen object-cover" alt="User" />
     </div>
-  )
-}
+  );
+};
 
-export default ProfilePic
+export default ProfilePic; // Дефолтный экспорт
